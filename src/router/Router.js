@@ -1,10 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Geral from '../views/Geral'
-import Lancamentos from '../views/Lancamentos'
-import Relatorios from '../views/Relatorios'
-import Categorias from '../views/Categorias'
-import Contas from '../views/Contas'
+
+// Geral
+import Geral from '../views/geral/Geral'
+
+// Contas
+import Contas from '../views/contas/Contas'
+
+// Categorias
+import Categorias from '../views/categorias/Categorias'
+
+// Relatorios
+import Relatorios from '../views/relatorios/Relatorios'
+
+// Lancamentos
+import Lancamentos from '../views/lancamentos/Lancamentos'
 
 Vue.use(Router)
 
