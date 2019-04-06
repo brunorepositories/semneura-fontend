@@ -1,27 +1,29 @@
 <template>
-  <div id="app">
-    <test></test>
-  </div>
+<div id="app">
+   <header-app></header-app>
+   <router-view></router-view>
+   <footer-app></footer-app>
+</div>
 </template>
 
 <script>
-import Test from './components/test'
+import headerApp from './views/default/header'
+import footerApp from './views/default/footer'
+
 
 export default {
-  name: 'App',
-  components: {
-    Test
-  }
+   name: 'App',
+   components: {
+      headerApp,
+      footerApp
+   }
 }
 </script>
 
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0%;
 }
 </style>
