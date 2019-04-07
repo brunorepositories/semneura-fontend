@@ -1,24 +1,13 @@
 <template>
-<div class="categorias">
+<div class="contas">
+   <router-link :to="{name: 'cadastrar-conta'}">
+      <button type="button" class="btn btn-outline-info">Cadastrar</button>
+   </router-link>
    <div class="container">
-      <h3 class="margin-top-none mb-0">Cadastrar Conta</h3>
-      <hr class="mt-0"/>
-         <input v-model="descricao" type="text" class="form-control mb-3" placeholder="Descrição da conta" >
-          <b-form-select v-model="tipo" :options="tipoContas" class="mb-3">
-            <template slot="first">
-               <option :value="''" disabled>Tipo de conta</option>
-            </template>
-         </b-form-select>
-         <div class="input-group mb-4">
-            <input v-model="saldo" v-money="money" type="text" class="form-control" placeholder="Saldo">
-            <div class="input-group-prepend">
-               <span class="input-group-text">$</span>
-            </div>
-         </div>
-         <router-link :to="{name: 'geral'}">
-            <button type="button" class="btn btn-outline-danger">Cancelar</button>
-         </router-link>
-         <button type="button" class="btn btn-outline-success" @click="enviar()">Enviar</button>
+      <h4 class="margin-top-none ">CONTAS</h4>
+         <ul v-for="(conta, k) in contas" :key="k" class="list-group list-group-flush text-left">
+            <li class="list-group-item">Cras justo odio</li>
+         </ul>
    </div>
 </div>
 </template>
@@ -29,7 +18,7 @@ import RestConnection from '../../restConnection/RestConnection'
 import Util from '../../utilities'
 
 export default {
-   name: 'categorias',
+   name: 'contas',
    directives: {money: VMoney},
    data() {
       return {

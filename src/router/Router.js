@@ -5,16 +5,22 @@ import Router from 'vue-router'
 import Geral from '../views/geral/Geral'
 
 // Contas
-import Contas from '../views/contas/Contas'
+import Contas from '../views/contas/GerenciarContas'
+import CadastrarConta from '../views/contas/CadastrarConta'
+
 
 // Categorias
-import Categorias from '../views/categorias/Categorias'
+import Categorias from '../views/categorias/GerenciarCategorias'
+import CadastrarCategorias from '../views/categorias/CadastrarCategoria'
+
 
 // Relatorios
 import Relatorios from '../views/relatorios/Relatorios'
 
 // Lancamentos
-import Lancamentos from '../views/lancamentos/Lancamentos'
+import Lancamentos from '../views/lancamentos/GerenciarLancamentos'
+import CadastrarLancamentos from '../views/lancamentos/CadastrarLancamento'
+
 
 Vue.use(Router)
 
@@ -22,7 +28,7 @@ export default new Router({
    routes: [
       {
          path: '/',
-         redirect: '/geral'
+         redirect: 'geral'
       },
       {
          path: '/geral',
@@ -32,7 +38,14 @@ export default new Router({
       {
          path: '/lancamentos',
          name: 'lancamentos',
-         component: Lancamentos
+         component: Lancamentos,
+         children: [
+            {
+               path: 'cadastrar',
+               name: 'cadastrar-lancamentos',
+               component: CadastrarLancamentos,
+            }
+         ]
       },
       {
          path: '/relatorios',
@@ -42,12 +55,26 @@ export default new Router({
       {
          path: '/categorias',
          name: 'categorias',
-         component: Categorias
+         component: Categorias,
+         children: [
+            {
+               path: 'cadastrar',
+               name: 'cadastrar-categoria',
+               component: CadastrarCategorias,
+            }
+         ]
       },
       {
          path: '/contas',
-         name: 'constas',
-         component: Contas
+         name: 'contas',
+         component: Contas,
+         children: [
+            {
+               path: 'cadastrar',
+               name: 'cadastrar-conta',
+               component: CadastrarConta,
+            }
+         ]
       }
    ]
 })
