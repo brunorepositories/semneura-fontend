@@ -6,9 +6,9 @@ const RestConnection = axios.create({
   baseURL: API_URL,
   headers: {
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer ' + localStorage.token
-  },
-  user: { usuario: '1' }
+    'Authorization': 'Bearer ' + localStorage.token,
+    'Usuario': '1'
+  }
 })
 
 export default RestConnection

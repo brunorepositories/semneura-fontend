@@ -18,7 +18,7 @@
          <router-link :to="{name: 'geral'}">
             <button type="button" class="btn btn-outline-danger">Cancelar</button>
          </router-link>
-         <button type="button" class="btn btn-success" @click="enviar()">Enviar</button>
+         <button type="button" class="btn btn-outline-success" @click="enviar()">Enviar</button>
    </div>
 </div>
 </template>
@@ -26,6 +26,7 @@
 <script>
 import {VMoney} from 'v-money'
 import RestConnection from '../../restConnection/RestConnection'
+import Util from '../../utilities'
 
 export default {
    name: 'contas',
@@ -36,9 +37,9 @@ export default {
          tipo: '',
          saldo: 0,
          tipoContas: [
-            { value: 'A', text: 'Carteira' },
+            { value: 'C', text: 'Carteira' },
             { value: 'B', text: 'Bancária' },
-            { value: 'C', text: 'Popança' }
+            { value: 'P', text: 'Popança' }
          ],
          money: {
             decimal: ',',
@@ -57,15 +58,15 @@ export default {
             return  alert('Informe o Tipo de conta para cadastrar!')
          }
 
-         dados: {
-            descricao: this.descricao;
-            tipo: this.tipo;
-            saldo: this.saldo
+         const dados = {
+               descricao: this.descricao,
+               tipo: this.tipo,
+               saldo: Util.replaceMoney(this.saldo)
          }
 
          try {
             const response = await RestConnection.post('/conta/criar', dados)
-
+            alert(response.body)
          } catch (e) {
             console.log(e)
          }
