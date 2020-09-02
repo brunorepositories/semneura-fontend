@@ -21,6 +21,7 @@ import Relatorios from '../views/relatorios/Relatorios'
 import Lancamentos from '../views/lancamentos/GerenciarLancamentos'
 import CadastrarLancamentos from '../views/lancamentos/CadastrarLancamento'
 
+// teste
 
 Vue.use(Router)
 
