@@ -3,12 +3,14 @@ import App from './App.vue'
 import router from '@/router'
 import store from '@/store'
 
+import './static/css/sidebar-custom.css'
 import './static/css/custom.css'
 
 Vue.config.productionTip = false
 
 new Vue({
+  el: "#app",
   render: h => h(App),
   router,
   store
-}).$mount('#app')
+})

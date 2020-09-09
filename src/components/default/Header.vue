@@ -1,57 +1,44 @@
 <template>
-<div class="headerApp row m-t-15">
-   <div class="col-2 teste">
-      <ul class="nav justify-content-start ">
-         <li class="nav-item">
-            <a class="nav-link active nav-custom" href="#">Logo</a>
-         </li>
-      </ul>
-   </div>
-   <div class="col-8">
-      <ul class="nav justify-content-center nav-custo-header">
-         <li class="nav-item">
-            <router-link to="/geral" class="nav-link nav-custom active">Geral</router-link>
-         </li>
-         <li class="nav-item">
-            <router-link to="/lancamentos" class="nav-link nav-custom">Lançamentos</router-link>
-         </li>
-         <li class="nav-item">
-            <router-link to="/categorias" class="nav-link nav-custom">Categorias</router-link>
-         </li>
-          <li class="nav-item">
-            <router-link to="/contas" class="nav-link nav-custom">Contas</router-link>
-         </li>
-         <li class="nav-item">
-            <router-link to="/relatorios" class="nav-link nav-custom">Relatórios</router-link>
-         </li>
-      </ul>
-   </div>
-   <div class="col-2">
-      <ul class="nav justify-content-end">
-         <li class="nav-item">
-            <a class="nav-link active nav-custom" href="#">User-Icon</a>
-         </li>
-      </ul>
-   </div>
-</div>
+
+  <nav class="navbar-menu" :class="{active: menuActive}" >
+    <!-- <nav class="navbar-menu navbar-expand-lg navbar-light bg-light" :class="{active: menuActive}" > -->
+    <!-- <div class="container-fluid"> -->
+
+      <button type="button" class="btn btn-info" @click.prevent="ativarMenu">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Sair</a>
+              </li>
+          </ul>
+      </div> -->
+    <!-- </div> -->
+  </nav>
+
 </template>
 
 
 <script>
 export default {
-   name: 'Header'
-
+  name: 'Header',
+  props: {
+    menuActive: {
+      type: Boolean,
+      default: false
+    }
+  },
+  methods: {
+    ativarMenu () {
+      this.$emit('toogleMenu')
+    }
+  }
 }
+
 </script>
 
-<style>
-.headerApp{
-   background-color:#7CE58A;
-   line-height: 2rem;
-}
-.nav-custom{
-   padding-left: 8px;
-   padding-right: 8px;
-}
+<style scope>
 </style>
 
