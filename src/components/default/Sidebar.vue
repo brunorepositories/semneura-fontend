@@ -11,6 +11,15 @@
 
       <!-- Menu Itens -->
       <ul class="list-unstyled components">
+
+        <li>
+            <router-link :to="{ name: 'CadastrarCliente' }">Cadastrar Cliente</router-link>
+        </li>
+
+        <li>
+            <router-link :to="{ name: 'ListarClientes' }">Listar Cliente</router-link>
+        </li>
+
           <li>
               <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
               <ul class="collapse list-unstyled" id="homeSubmenu">

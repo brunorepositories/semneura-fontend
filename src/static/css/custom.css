@@ -13,14 +13,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background: #fafafa;
-}
-
-p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
+    color: var(--color-primary)
 }
 
 a,
@@ -55,6 +48,36 @@ a:focus {
 
 /******************* Buttons *******************/
 
+.buttons-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.btn {
+    font-weight: 600;
+}
+
+.btn-success {
+    min-width: 100px;
+    background: #31b46c;
+    border: none;
+}
+
+.btn-success:hover {
+    background: #13c764;
+    border: none;
+}
+
+.btn-outline-danger {
+    border: none;
+    color: #f06966;
+}
+
+.btn-outline-danger:hover {
+    background: #f06966;
+}
+
 .btn-clean {
     border: none;
     background: none;
@@ -65,12 +88,30 @@ a:focus {
 }
 
 
-/******************* Inputs *******************/
+/******************* Inputs - Formulário *******************/
 
 .form-control:focus {
     border-color: var(--color-primary);
     box-shadow: 0 0 0 0.2rem var(--color-primary);
 }
+
+.form-control::placeholder {
+    color: var(--color-secondary);
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.form-group>label {
+    color: var(--color-secondary);
+    font-weight: 500;
+}
+
+.form-group>input {
+    color: var(--color-secondary);
+}
+
+
+
 
 
 /******************* Cards *******************/
@@ -78,11 +119,39 @@ a:focus {
 .card {
     box-shadow: 0px 0px 15px 0px rgba(146, 113, 130, 0.247);
     border: none;
+    padding: 15px;
+}
+
+.card-body {
+    padding: 15px;
 }
 
 .card-title {
-    margin-bottom: 30px;
     font-size: 1.5em;
+    color: var(--color-secondary);
+    margin: 0px
+}
+
+.card-body>form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.card-head {
+    padding: 15px;
+}
+
+.card-head>hr {
+    margin-bottom: 0;
+}
+
+
+
+.hr-card-title {
+    margin-bottom: 30px;
+    color: var(--color-secondary);
 }
 
 
