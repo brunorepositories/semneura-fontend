@@ -3,10 +3,15 @@
   <nav class="navbar-menu" :class="{active: menuActive}" >
     <!-- <nav class="navbar-menu navbar-expand-lg navbar-light bg-light" :class="{active: menuActive}" > -->
     <!-- <div class="container-fluid"> -->
+        <div class="col-2">
+          <button type="button" class="btn-clean " @click.prevent="ativarMenu">
+            <i v-if="menuActive" class="fa fa-arrow-right color-secondary"></i>
+            <i v-else class="fa fa-arrow-left color-secondary"></i>
+          </button>
+        </div>
+        <div class="col-10">
 
-      <button type="button" class="btn btn-info" @click.prevent="ativarMenu">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </button>
+        </div>
 
       <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="nav navbar-nav ml-auto">

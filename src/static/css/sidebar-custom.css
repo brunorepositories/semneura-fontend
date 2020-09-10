@@ -1,44 +1,16 @@
-/*
-    DEMO STYLE
-*/
 
-.navbar-menu {
-  overflow: hidden;
-  position: fixed;
-  height: 70px;
-  width: calc(100% - 250px);
-  margin-left: 250px;
-  padding: 15px 10px;
-  z-index: 200;
-  background: #927182;
-  border: none;
-  border-radius: 0;
-  margin-bottom: 40px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s;
+/**************** Sidebar *****************/
+
+.logo-menu-title {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 1.75em;
 }
 
-.navbar-menu.active {
-  width: 100%;
-  margin-left: 0;
+.logo-menu-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
 }
-
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
-}
-
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
-}
-
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
 
 .wrapper {
     display: flex;
@@ -46,34 +18,29 @@
 }
 
 .sidebar {
-    width: 250px;
+    width: 200px;
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #F3BACA;
+    background: #ecb3c3;
     color: #927182;
     transition: all 0.3s;
+
+    font-weight: 500;
 }
 
 .sidebar.active {
-    margin-left: -250px;
+    margin-left: -200px;
 }
 
 .sidebar .sidebar-header {
-  height: 70px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
-  padding: 20px;
-  color: #fff;
-  background: #927182;
+  padding: 25px;
 }
-
-/* .sidebar ul.components {
-    border-bottom: 1px solid #47748b;
-} */
 
 .sidebar ul p {
     color: #fff;
@@ -82,7 +49,7 @@
 
 .sidebar ul li a {
     padding: 15px;
-    font-size: 1.1em;
+    font-size: 1em;
     display: block;
 }
 
@@ -91,10 +58,15 @@
     background: #927182;
 }
 
+.sidebar ul li a:focus {
+  color: #fff;
+  background: #927182;
+}
+
 .sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #fff !important;
-    background: #927182;
+    color: #fff;
+    background: #927182be;
 }
 
 a[data-toggle="collapse"] {
@@ -111,9 +83,10 @@ a[data-toggle="collapse"] {
 
 ul ul a {
     font-size: 1em !important;
+    font-weight: 400;
     padding-left: 40px !important;
     color: #fff;
-    background: #957E8A;
+    background: #927182be;
 }
 
 ul.CTAs {
@@ -122,7 +95,7 @@ ul.CTAs {
 
 ul.CTAs a {
     text-align: center;
-    font-size: 0.9em !important;
+    font-size: 0.7em !important;
     display: block;
     border-radius: 5px;
     margin-bottom: 5px;
@@ -139,22 +112,10 @@ a.article:hover {
     color: #fff !important;
 }
 
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
-
-.content {
-    width: calc(100% - 250px);
-    padding: 40px;
-    min-height: 100vh;
-    transition: all 0.3s;
-    position: absolute;
-    top: 70px;
-    right: 0;
-}
-
-.content.active {
-    width: 100%;
+a.article,
+a.article:focus {
+    background: #927182 !important;
+    color: #fff !important;
 }
 
 /* ---------------------------------------------------

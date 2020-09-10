@@ -1,0 +1,19 @@
+/**************** Variaveis root *****************/
+
+:root {
+    --color-primary: #F3BACA;
+    --color-secondary: #927182;
+    /* --color-tertiary: #927182; */
+
+  }
+
+/**************** Cores *****************/
+
+.color-primary {
+    color: var(--color-primary);
+  }
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+

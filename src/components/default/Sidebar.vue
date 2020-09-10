@@ -5,7 +5,8 @@
 
     <!-- Header Menu  -->
       <div class="sidebar-header m-b-5">
-          <h3 class="logo-menu m-b-0">Sem Neura</h3>
+        <h3 class="logo-menu-title m-b-0">sem neura</h3>
+        <h6 class="logo-menu-subtitle">produtos sensuais</h6>
       </div>
 
       <!-- Menu Itens -->

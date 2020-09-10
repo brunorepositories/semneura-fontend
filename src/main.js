@@ -1,9 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from '@/router'
-import store from '@/store'
+import router from '@/router/Router'
 
-import './static/css/sidebar-custom.css'
 import './static/css/custom.css'
 
 Vue.config.productionTip = false
@@ -11,6 +9,5 @@ Vue.config.productionTip = false
 new Vue({
   el: "#app",
   render: h => h(App),
-  router,
-  store
+  router
 })
