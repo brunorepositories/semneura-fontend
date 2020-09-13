@@ -37,9 +37,9 @@
 
 .sidebar .sidebar-header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
-  padding: 25px;
+  padding-top: 20px;
 }
 
 .sidebar ul p {
@@ -48,8 +48,8 @@
 }
 
 .sidebar ul li a {
-    padding: 15px;
-    font-size: 1em;
+    padding: 10px;
+    font-size: 0.9em;
     display: block;
 }
 
@@ -82,8 +82,6 @@ a[data-toggle="collapse"] {
 }
 
 ul ul a {
-    font-size: 1em !important;
-    font-weight: 400;
     padding-left: 40px !important;
     color: #fff;
     background: #927182be;

@@ -8,32 +8,26 @@
         <h3 class="logo-menu-title m-b-0">sem neura</h3>
         <h6 class="logo-menu-subtitle">produtos sensuais</h6>
       </div>
+      <hr class="m-b-5">
 
       <!-- Menu Itens -->
       <ul class="list-unstyled components">
 
         <li>
-            <router-link :to="{ name: 'CadastrarCliente' }">Cadastrar Cliente</router-link>
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Clientes</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <router-link :to="{ name: 'ListarClientes' }">Listar Cliente</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'CadastrarCliente' }">Cadastrar Cliente</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'EditarCliente' }">Editar Cliente</router-link>
+                </li>
+            </ul>
         </li>
 
-        <li>
-            <router-link :to="{ name: 'ListarClientes' }">Listar Cliente</router-link>
-        </li>
-
-          <li>
-              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-              <ul class="collapse list-unstyled" id="homeSubmenu">
-                  <li>
-                      <a href="#">Home 1</a>
-                  </li>
-                  <li>
-                      <a href="#">Home 2</a>
-                  </li>
-                  <li>
-                      <a href="#">Home 3</a>
-                  </li>
-              </ul>
-          </li>
           <li>
               <a href="#">About</a>
           </li>

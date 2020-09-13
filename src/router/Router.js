@@ -9,6 +9,7 @@ import Home from '@/views/Home'
 // Clientes
 import ListarClientes from '@/views/clientes/ListarClientes'
 import CadastrarCliente from '@/views/clientes/CadastrarCliente'
+import EditarCliente from '@/views/clientes/EditarCliente'
 
 
 Vue.use(Router)
@@ -28,6 +29,11 @@ const routes = [
                 name: 'CadastrarCliente',
                 path: 'cadastrar-cliente',
                 component: CadastrarCliente,
+            },
+            {
+                name: 'EditarCliente',
+                path: 'editar-cliente',
+                component: EditarCliente,
             }
         ]
     }

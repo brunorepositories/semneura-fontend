@@ -3,6 +3,8 @@
 :root {
     --color-primary: #F3BACA;
     --color-secondary: #927182;
+    --color-white: #fff;
+    --color-info-blue: #17a2b8;
     /* --color-tertiary: #927182; */
 
   }
@@ -16,4 +18,14 @@
 .color-secondary {
     color: var(--color-secondary);
 }
+
+.color-white {
+    color: var(--color-white);
+}
+
+.color-info-blue {
+    color: var(--color-info-blue);
+}
+
+
 
