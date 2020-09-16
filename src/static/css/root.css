@@ -12,20 +12,33 @@
 /**************** Cores *****************/
 
 .color-primary {
-    color: var(--color-primary);
+    color: var(--color-primary) !important;
   }
 
 .color-secondary {
-    color: var(--color-secondary);
+    color: var(--color-secondary) !important;
 }
 
 .color-white {
-    color: var(--color-white);
+    color: var(--color-white) !important;
 }
 
 .color-info-blue {
-    color: var(--color-info-blue);
+    color: var(--color-info-blue) !important;
 }
 
+.bg-primary {
+    background: var(--color-primary) !important;
+  }
 
+.bg-secondary {
+    background-color: var(--color-secondary) !important;
+}
 
+.bg-white {
+    background: var(--color-white) !important;
+}
+
+.bg-info-blue {
+    background: var(--color-info-blue) !important;
+}

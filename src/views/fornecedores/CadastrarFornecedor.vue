@@ -31,7 +31,7 @@
                 <div class="row">
                     <div class="form-group col-5">
                         <label v-if="pessoaJuridicaCheck">Razão social *</label>
-                        <label v-else>Cliente *</label>
+                        <label v-else>Nome *</label>
                         <input class="form-control" placeholder="Ex: Bruno Henrique de Souza">
                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
@@ -67,7 +67,7 @@
                     <div class="form-group col-4">
                          <label v-if="pessoaJuridicaCheck">Data de fundação *</label>
                         <label v-else>Data de nascimento *</label>
-                        <input type="date" class="form-control">
+                        <input type="email" class="form-control">
                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
                 </div>

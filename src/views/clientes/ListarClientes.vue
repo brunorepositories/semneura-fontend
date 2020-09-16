@@ -18,13 +18,8 @@
         </div>
 
         <div class="card-body">
-            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-            <!-- <p class="card-text">Some quick asaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssssssssssssssssssssssssssssssssexample text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a> -->
-            <div>
-                <table class="table table-sm table-striped">
-                    <thead class="table-warning color-secondary">
+                <table class="table">
+                    <thead class="color-white bg-secondary">
                         <tr>
                             <th>Código</th>
                             <th>Cliente</th>
@@ -80,7 +75,6 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
 <hr>
         </div>
     </div>

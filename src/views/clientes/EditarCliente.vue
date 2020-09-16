@@ -148,9 +148,64 @@
                         <!-- <textarea type="textarea" class="form-control"> </textarea> -->
                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
-                    <div class="p-l-20">
-
-                    <small >Nenhuma condição de pagamento foi adicionada.</small>
+                    <div class="w-100 p-l-15 p-r-15">
+                        <table class="table table-sm">
+                            <thead class="color-white bg-secondary">
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Cliente</th>
+                                    <th>Instagrem</th>
+                                    <th>WhatsApp</th>
+                                    <th class="flex-col-center">Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Bruno Henrique de soua</td>
+                                    <td>@bruno</td>
+                                    <td>(45) 9 982007-63</td>
+                                    <td class="flex-col-center">
+                                        <button type="button" class="btn-clean">
+                                            <i class="fas fa-trash color-secondary"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Bruno Henrique de soua</td>
+                                    <td>@bruno</td>
+                                    <td>(45) 9 982007-63</td>
+                                    <td class="flex-col-center">
+                                        <button type="button" class="btn-clean">
+                                            <i class="fas fa-trash color-secondary"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Bruno Henrique de soua</td>
+                                    <td>@bruno</td>
+                                    <td>(45) 9 982007-63</td>
+                                    <td class="flex-col-center">
+                                        <button type="button" class="btn-clean">
+                                            <i class="fas fa-trash color-secondary"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Bruno Henrique de soua</td>
+                                    <td>@bruno</td>
+                                    <td>(45) 9 982007-63</td>
+                                    <td class="flex-col-center">
+                                        <button type="button" class="btn-clean">
+                                            <i class="fas fa-trash color-secondary"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
