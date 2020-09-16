@@ -4,7 +4,7 @@ import Router from 'vue-router'
 
 
 // Home
-import Home from '@/views/Home'
+import Home from '@/views/Home/Home'
 
 //Categorias
 // import ListarCategorias from '@/views/categorias/ListarCategorias'
